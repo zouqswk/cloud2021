@@ -3,9 +3,16 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+#    需要在ect host中配置虚拟域名 eureka7001.com
+    hostname: eureka7001.com
+  #    单机版的
+#    hostname: localhost
+
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      单机版
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      集群互相守望
+      defaultZone: http://eureka7002.com:7002/eureka/
