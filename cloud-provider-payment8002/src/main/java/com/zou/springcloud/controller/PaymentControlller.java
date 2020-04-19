@@ -4,6 +4,7 @@ import com.zou.springcloud.bean.Payment;
 import com.zou.springcloud.bean.CommentResult;
 import com.zou.springcloud.service.PaymentService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,5 +40,4 @@ public class PaymentControlller {
             return new CommentResult(444,"查询失败112221id="+id+",serverPort="+serverPort,null);
         }
     }
-
 }
