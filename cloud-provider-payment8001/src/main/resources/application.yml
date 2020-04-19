@@ -7,3 +7,13 @@ spring:
   devtools:
     restart:
       enabled: true
+
+
+eureka:
+  client:
+#    表示是否将自己注册到Eureka-server默认是true
+    register-with-eureka: true
+#    是否从Eureka抓取已有的注册信息默认是true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
