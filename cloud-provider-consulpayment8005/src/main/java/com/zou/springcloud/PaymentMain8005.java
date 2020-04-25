@@ -8,8 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @Slf4j
-public class PaymentMain8004 {
+public class PaymentMain8005 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8004.class,args);
+        SpringApplication.run(PaymentMain8005.class);
     }
 }

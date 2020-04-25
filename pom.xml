@@ -17,6 +17,9 @@
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
         <module>cloud-provider-zkmayment8004</module>
+        <module>cloud-consumer-zkorder80</module>
+        <module>cloud-provider-consulpayment8005</module>
+        <module>cloud-consumer-consulorder80</module>
     </modules>
 
     <dependencyManagement>
